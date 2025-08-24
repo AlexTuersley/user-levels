@@ -1,5 +1,6 @@
 {
     "name": "alextuersley/userlevels",
+    "version": "1.0.0",
     "description": "User Level Migration, Seeder and Route Access Package",
     "type": "project",
     "require": {
