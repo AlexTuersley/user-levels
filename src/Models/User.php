@@ -38,6 +38,11 @@ class User extends Authenticatable
         ];
     }
 
+    public function userLevel()
+    {
+        return $this->belongsTo(UserLevel::class, 'user_level_id');
+    }
+
     /**
      * Create a User with all permission
      *

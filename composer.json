@@ -22,7 +22,13 @@
     "autoload": {
         "psr-4": {
             "alextuersley\\Userlevels\\": "src"
-        }
+        },
+        "classmap": [
+            "src/Helpers",
+            "src/Models",
+            "src/Services",
+            "src/Traits"
+        ]
     },
     "extra": {
         "laravel": {

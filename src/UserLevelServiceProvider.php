@@ -1,6 +1,6 @@
 <?php
 
-namespace alextuersley\Userlevels;
+namespace alextuersley\Userlevels\Models;
 
 
 use Illuminate\Support\ServiceProvider;
@@ -24,20 +24,8 @@ class UserLevelServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-          $this->publishes([
-            __DIR__.'/../database' => database_path(''),
+        $this->publishes([
+            __DIR__.'/database/' => database_path(''),
         ], 'userlevels-database');
-        $this->publishes([
-            __DIR__.'/../Models' => '', base_path('app/Models')
-        ], 'userlevels-models');
-        $this->publishes([
-            __DIR__.'/../Helpers' => '', base_path('app/Helpers')
-        ], 'userlevels-helpers');
-        $this->publishes([
-            __DIR__.'/../Services' => '', base_path('app/Services')
-        ], 'userlevels-services');
-           $this->publishes([
-            __DIR__.'/../Services' => '', base_path('app/Traits')
-        ], 'userlevels-traits');
     }
 }
