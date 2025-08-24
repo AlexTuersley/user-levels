@@ -1,0 +1,27 @@
+{
+    "name": "alext/userlevels",
+    "description": "User Level Migration, Seeder and Route Access Package",
+    "type": "project",
+    "require": {
+        "laravel/framework": "^12.25",
+        "php": "^8.3",
+        "laravel/tinker": "^2.10"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.24",
+        "phpunit/phpunit": "^12.3",
+        "nunomaduro/collision": "^8.8"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Alext\\Userlevels\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex",
+            "email": "alexandertuersley@gmail.com"
+        }
+    ]
+}
