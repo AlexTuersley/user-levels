@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services;
+namespace alextuersley\Userlevels\Services;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\DB;

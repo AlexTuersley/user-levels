@@ -1,6 +1,7 @@
 <?php
 
-namespace App;
+namespace alextuersley\Userlevels;
+
 
 use Illuminate\Support\ServiceProvider;
 

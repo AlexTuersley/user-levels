@@ -1,6 +1,7 @@
 <?php
 
-namespace Database\Seeders;
+namespace alextuersley\Userlevels\Database\Seeders;
+
 
 use App\Helpers\RouteHelper;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;

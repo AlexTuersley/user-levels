@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers;
+namespace alextuersley\Userlevels\Helpers;
 
 use Illuminate\Support\Facades\Route;
 
