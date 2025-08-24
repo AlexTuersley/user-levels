@@ -13,15 +13,22 @@
         "nunomaduro/collision": "^8.8"
     },
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Alext\\Userlevels\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Alex",
             "email": "alexandertuersley@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "alextuersley\\Userlevels\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "alextuersley\\Userlevels\\UserLevelServiceProvider"
+            ]
+        }
+    }
 }
