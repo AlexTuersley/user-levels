@@ -1,5 +1,5 @@
 {
-    "name": "alext/userlevels",
+    "name": "alextuersley/userlevels",
     "description": "User Level Migration, Seeder and Route Access Package",
     "type": "project",
     "require": {
