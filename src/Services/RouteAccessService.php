@@ -4,8 +4,7 @@ namespace alextuersley\Userlevels\Services;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\DB;
-use App\Models\Route;
-
+use alextuersley\Userlevels\Models\Route;
 class RouteAccessService
 {
     protected Authenticatable|null $user = null;

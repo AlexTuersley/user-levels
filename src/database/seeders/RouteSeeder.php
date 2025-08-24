@@ -3,11 +3,10 @@
 namespace alextuersley\Userlevels\Database\Seeders;
 
 
-use App\Helpers\RouteHelper;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Route;
-
+use alextuersley\Userlevels\Models\Route;
+use alextuersley\Userlevels\Helpers\RouteHelper;
 class RouteSeeder extends Seeder
 {
     private array $ignoreRoutes = [

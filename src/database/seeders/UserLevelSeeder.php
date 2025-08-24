@@ -3,7 +3,8 @@
 namespace alextuersley\Userlevels\Database\Seeders;
 
 
-use App\Models\Route;
+use alextuersley\Userlevels\Models\Route;
+use alextuersley\Userlevels\Models\UserLevel;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -25,18 +26,18 @@ class UserLevelSeeder extends Seeder
     public function run(): void
     {
         foreach ($this->userLevels as $level) {
-            \App\Models\UserLevel::updateOrCreate(
+            UserLevel::updateOrCreate(
                 ['slug' => $level['slug']],
                 $level
             );
         }
-        $userLevels = \App\Models\UserLevel::all();
+        $userLevels = UserLevel::all();
         foreach (Route::all() as $route) {
             foreach($userLevels as $userLevel) {
                     $insertArray = [
                         'route_id' => $route->id,
                         'routable_id' => $userLevel->id,
-                        'routable_type' => \App\Models\UserLevel::class,
+                        'routable_type' => UserLevel::class,
                     ];
                   
                     DB::table('routables')->updateOrInsert(
